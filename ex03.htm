@@ -6,10 +6,11 @@
     <title>Thông báo tuyển sinh</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", serif;
             padding: 40px;
             background-color: #f5f5f5;
         }
+
         .container {
             background-color: white;
             padding: 50px;
@@ -18,6 +19,7 @@
             margin: 0 auto;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
+
         .header {
             display: flex;
             justify-content: space-between;
@@ -26,86 +28,76 @@
             padding-bottom: 15px;
             border-bottom: 2px solid #333;
         }
+
         .header-left h3 {
             margin: 3px 0;
             font-size: 14px;
             font-weight: bold;
         }
+
         .header-right {
             text-align: right;
             font-size: 12px;
         }
+
         .header-right p {
             margin: 3px 0;
             font-weight: bold;
         }
+
         .title {
             text-align: center;
             margin: 40px 0;
         }
+
         .title h1 {
             font-size: 24px;
             font-weight: bold;
             margin: 10px 0;
         }
+
         .title .subtitle {
             font-size: 14px;
             font-style: italic;
-            color: #666;
+            color: #555;
         }
+
         .content {
             margin: 30px 0;
             line-height: 1.8;
         }
+
         .content h4 {
             font-size: 16px;
             font-weight: bold;
             margin: 15px 0 10px 0;
         }
+
         .content ul {
             list-style-type: disc;
             padding-left: 30px;
             margin: 10px 0;
         }
+
         .footer {
             margin-top: 50px;
             display: flex;
-            align-items: center;
             justify-content: center;
             gap: 20px;
-            padding: 30px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
         }
-        .logo-placeholder {
+
+        .footer img {
             width: 150px;
-            height: 80px;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 12px;
-            text-align: center;
-            border-radius: 5px;
-        }
-        .building-placeholder {
-            width: 120px;
-            height: 80px;
-            background: linear-gradient(135deg, #8e9eab 0%, #eef2f3 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333;
-            font-size: 11px;
-            text-align: center;
+            height: 90px;
+            object-fit: cover;
+            border: 1px solid #333;
             border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
+
         <div class="header">
             <div class="header-left">
                 <h3>TRƯỜNG ĐẠI HỌC BẠC LIÊU</h3>
@@ -116,25 +108,25 @@
                 <p>Độc lập - Tự do - Hạnh phúc</p>
             </div>
         </div>
-        
+
         <div class="title">
             <h1>THÔNG BÁO TUYỂN SINH</h1>
             <p class="subtitle">(Hệ đại học không chính quy)</p>
         </div>
-        
+
         <div class="content">
             <h4>1. Tài chính tín dụng</h4>
             <h4>2. Quản lý đất đai</h4>
             <h4>3. Công nghệ thực phẩm</h4>
             <h4>4. Văn hóa du lịch</h4>
-            
-            <p style="margin-top: 20px;"><strong>Môn thi:</strong></p>
+
+            <p><strong>Môn thi:</strong></p>
             <ul>
-                <li>Họ và tên: Văn, Sử, Địa</li>
+                <li>Môn thi: Văn, Sử, Địa</li>
                 <li>Ngày thi: 19/12/2008</li>
                 <li>Ôn tập văn hóa: 13/11/2008</li>
             </ul>
-            
+
             <h4>5. Công tác xã hội</h4>
             <h4>6. Báo chí</h4>
             <ul>
@@ -143,18 +135,13 @@
                 <li>Ôn tập văn hóa: 14/11/2008</li>
             </ul>
         </div>
-        
+
         <div class="footer">
-            <div class="logo-placeholder">
-                TRƯỜNG ĐẠI HỌC<br>BẠC LIÊU<br>UNIVERSITY
-            </div>
-            <div class="building-placeholder">
-                Hình ảnh<br>Trường
-            </div>
-            <div class="building-placeholder">
-                Hình ảnh<br>Cổng trường
-            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/University_logo.png" alt="Logo trường">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/University_building.jpg" alt="Tòa nhà trường">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/University_gate.jpg" alt="Cổng trường">
         </div>
+
     </div>
 </body>
 </html>
