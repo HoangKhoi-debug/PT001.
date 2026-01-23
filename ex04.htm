@@ -6,10 +6,11 @@
     <title>Đăng ký xét tuyển</title>
     <style>
         body {
-            font-family: Verdana, sans-serif;
+            font-family: "Times New Roman", serif;
             padding: 40px;
             background-color: #f5f5f5;
         }
+
         .form-container {
             width: 700px;
             margin: 30px auto;
@@ -18,137 +19,152 @@
             padding: 40px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
+
         .header-form {
             text-align: center;
             margin-bottom: 40px;
         }
+
         .header-form h3 {
             margin: 5px 0;
             font-size: 16px;
-            color: #333;
+            font-weight: bold;
         }
+
         .header-form h2 {
             margin: 20px 0;
             font-size: 22px;
-            color: #000;
             font-weight: bold;
+            text-transform: uppercase;
         }
+
         .form-group {
             margin: 25px 0;
             display: flex;
             align-items: flex-start;
         }
+
         .form-group label {
             min-width: 150px;
             font-size: 16px;
             font-weight: bold;
             padding-top: 8px;
         }
+
         .form-group input[type="text"] {
             flex: 1;
-            padding: 10px;
+            padding: 8px;
             font-size: 16px;
             border: 2px solid #333;
         }
+
         .radio-group {
             display: flex;
             gap: 30px;
             align-items: center;
         }
+
         .radio-group input[type="radio"] {
-            width: 18px;
-            height: 18px;
-            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
         }
+
         .radio-group label {
-            min-width: auto;
             font-size: 16px;
             font-weight: normal;
         }
+
         .major-section {
             margin-left: 150px;
+            margin-top: 10px;
         }
+
         .major-option {
             display: flex;
             align-items: center;
-            margin: 12px 0;
+            margin: 10px 0;
         }
+
         .major-option input[type="radio"] {
-            width: 18px;
-            height: 18px;
-            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
         }
+
         .major-option label {
             font-size: 16px;
         }
+
         .button-group {
             text-align: center;
             margin-top: 40px;
         }
+
         .button-group button {
-            padding: 12px 35px;
+            padding: 10px 35px;
             font-size: 16px;
             font-weight: bold;
             margin: 0 15px;
             cursor: pointer;
             border: 2px solid #333;
-            background-color: #e0e0e0;
-            border-radius: 5px;
+            background-color: #e6e6e6;
         }
+
         .button-group button:hover {
-            background-color: #d0d0d0;
+            background-color: #d4d4d4;
         }
     </style>
 </head>
 <body>
     <div class="form-container">
+
         <div class="header-form">
             <h3>TRƯỜNG ĐẠI HỌC BẠC LIÊU</h3>
             <h3>KHOA KỸ THUẬT VÀ CÔNG NGHỆ</h3>
             <h2>ĐĂNG KÝ XÉT TUYỂN</h2>
         </div>
-        
+
         <div class="form-group">
             <label>Họ tên:</label>
             <input type="text" name="hoten" placeholder="Nhập họ tên">
         </div>
-        
+
         <div class="form-group">
             <label>Giới tính:</label>
             <div class="radio-group">
-                <div>
-                    <input type="radio" name="gioitinh" value="nam" id="nam" checked>
-                    <label for="nam">Nam</label>
-                </div>
-                <div>
-                    <input type="radio" name="gioitinh" value="nu" id="nu">
-                    <label for="nu">Nữ</label>
-                </div>
+                <label>
+                    <input type="radio" name="gioitinh" value="nam" checked> Nam
+                </label>
+                <label>
+                    <input type="radio" name="gioitinh" value="nu"> Nữ
+                </label>
             </div>
         </div>
-        
+
         <div class="form-group" style="display: block;">
             <label>Ngành thi:</label>
             <div class="major-section">
                 <div class="major-option">
-                    <input type="radio" name="nganh" value="cntt" id="cntt" checked>
-                    <label for="cntt">Công nghệ thông tin</label>
+                    <input type="radio" name="nganh" value="cntt" checked>
+                    <label>Công nghệ thông tin</label>
                 </div>
                 <div class="major-option">
-                    <input type="radio" name="nganh" value="mammon" id="mammon">
-                    <label for="mammon">Mầm non</label>
+                    <input type="radio" name="nganh" value="mamnon">
+                    <label>Mầm non</label>
                 </div>
                 <div class="major-option">
-                    <input type="radio" name="nganh" value="amnhac" id="amnhac">
-                    <label for="amnhac">Âm nhạc</label>
+                    <input type="radio" name="nganh" value="amnhac">
+                    <label>Âm nhạc</label>
                 </div>
             </div>
         </div>
-        
+
         <div class="button-group">
             <button type="submit">Đồng ý</button>
             <button type="reset">Không đồng ý</button>
         </div>
+
     </div>
 </body>
 </html>
